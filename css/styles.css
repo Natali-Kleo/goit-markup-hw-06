@@ -102,41 +102,43 @@ header {
     border: none;
 }
 
-.address-list {
-    /* display: flex;
-    gap: 40px; */
-}
-
 
 
 /* Business solutions */
 .business {
     background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    padding: 72px 0;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-320.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
-.business-container {
-    width: 1440px;
-    padding: 188px auto;
+@media screen and (min-resolution: 192dpi) {
+    .business {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-320-2x.jpg);
         }
+    }
+
+.business-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .main-title {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    max-width: 496px;
+    max-width: 216px;
     margin: 0 auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 }
 
 .main-button {
@@ -840,10 +842,29 @@ header {
     color: #404bbf;
 }
 
-.business {
 
+
+.business {
+    padding: 112px 0;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-768.jpg);
 }
 
+@media screen and (min-resolution: 192dpi) {
+    .business {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-768-2x.jpg);
+    }
+}
+
+.main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+}
+
+
+
+}
 
 
 
@@ -863,7 +884,7 @@ header {
 
 .address-list {
     flex-direction: row;
-    gap 40px;
+    gap: 40px;
 }
 
 .address-link {
@@ -872,5 +893,22 @@ header {
 }
 
 .business {
+    padding: 188px;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .business {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1158-2x.jpg);
+    }
+}
+
+.main-title {
+    color: #fff;
+    font-size: 56px;
+    margin-bottom: 48px;
+}
+
+
 
 }
