@@ -167,6 +167,10 @@ header {
 }
 
 /* Advantages-section */
+.advantages {
+    padding: 96px 0;
+}
+
 
 .visually-hidden { 
     position: absolute;
@@ -182,51 +186,29 @@ header {
     display: block;
 }
 
-.advantages {
-    padding: 120px 0;
-}
+
 .advantages-list {
     display: flex;
-    gap: 24px;
-}
-
-.advantages-item {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-grow: calc((100% - 72px) / 4);
-    max-width: 264px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .icon-box {
-    display: flex;
-    width: 264px;
-    height: 112px;
-    margin-bottom: 8px;
-    align-items: center;
-    justify-content: center;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    border: 1px solid #8e8f99
+    display: none; 
 }
 
 .advantages-list-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .advantages-list-text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -769,6 +751,8 @@ header {
 /* ---------------min-width: 768px-------------- */ 
 
 @media screen and (min-width: 768px) {
+
+/* Business solutions */
 .container {
     max-width: 768px;
 }
@@ -842,8 +826,6 @@ header {
     color: #404bbf;
 }
 
-
-
 .business {
     padding: 112px 0;
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-768.jpg);
@@ -862,7 +844,29 @@ header {
     margin-bottom: 36px;
 }
 
+/* Advantages-section */
+.advantages-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 24px;
+}
 
+.advantages-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-grow: calc((100% - 24px) / 2);
+    max-width: 264px;
+    flex-wrap: wrap;
+}
+
+.advantages-list-title {
+text-align: start;
+}
 
 }
 
@@ -872,6 +876,8 @@ header {
 /* ---------------min-width: 1158px-------------- */
 
 @media screen and (min-width: 1158px) {
+
+/* Business solutions */
 .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -909,6 +915,45 @@ header {
     margin-bottom: 48px;
 }
 
+/* Advantages-section */
+.advantages {
+    padding: 120px 0;
+}
 
+.advantages-list {
+    flex-direction: row;
+    gap: 24px;
+}
+
+.advantages-item {
+    flex-grow: calc((100% - 72px) / 4);
+}
+
+.icon-box {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #8e8f99
+}
+
+.advantages-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.advantages-list-text {
+    font-weight: 400;
+}
 
 }
+
